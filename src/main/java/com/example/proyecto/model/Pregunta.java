@@ -4,24 +4,22 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
+public class Pregunta {
 
-public class Comentario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private Long MateriaId;
+    private Long EjercicioId;
 
-    private Long UsuarioId;
 
-    private String texto;
+    private String enunciado;
 
-    private LocalDate entryDate;
+    private String opc1;
+    private String opc2;
+    private String opc3;
+    private String opc4;
 
-    private LocalTime entryTime;
-
+    private String respuestaCorrecta;
 }
-

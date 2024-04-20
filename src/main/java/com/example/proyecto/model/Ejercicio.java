@@ -5,23 +5,22 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 import java.time.LocalDate;
-import java.time.LocalTime;
 
-public class Comentario {
+public class Ejercicio {
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
     private Long MateriaId;
 
-    private Long UsuarioId;
+    private Long Dificultad;
 
-    private String texto;
+    private String nombre;
 
-    private LocalDate entryDate;
+    private String descripcion;
 
-    private LocalTime entryTime;
+    private LocalDate fechaCreacion;
+
 
 }
-

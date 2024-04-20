@@ -4,24 +4,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
-
-public class Comentario {
-
+public class UsuarioxMateria {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
-    private Long MateriaId;
-
     private Long UsuarioId;
-
-    private String texto;
-
-    private LocalDate entryDate;
-
-    private LocalTime entryTime;
-
+    private Long MateriaId;
 }
-
